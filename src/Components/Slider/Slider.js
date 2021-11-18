@@ -1,9 +1,12 @@
-import './Slide.css';
+import './Slider.css';
 
 const Slider = () => {
     return (
         <>
-        <p>Slider</p>
+        <section className="slider">
+            
+        aaaaa
+        </section>
         </>
     )
 }
