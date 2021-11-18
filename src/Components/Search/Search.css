@@ -5,6 +5,7 @@
     height: 2rem;
     background-color: #66BCEF;
     border-radius: 5%;
+
     width: 12rem;
 }
 
@@ -44,7 +45,13 @@ input::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 5%;
+    cursor: pointer;
+
+
 }
+
+
 
 .iconSeach img {
     height: 1.5rem;
