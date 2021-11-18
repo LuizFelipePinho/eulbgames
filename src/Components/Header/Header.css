@@ -1,0 +1,22 @@
+* {
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+
+}
+
+.header {
+    border: solid black 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #171A21;
+    color: #fff;
+    height: 7rem;
+
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+}

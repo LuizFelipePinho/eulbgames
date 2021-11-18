@@ -1,0 +1,53 @@
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 2rem;
+    background-color: #66BCEF;
+    border-radius: 5%;
+    width: 12rem;
+}
+
+.navbar input {
+    background-color: #316282;
+    height: 2rem;
+    color: #fff;
+    text-align: left;
+    padding: 0.3rem;
+    border-radius: 4% 0 0 4%;
+    width: 10rem;
+
+
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    border: solid #66BCEF 1px;
+    outline: 0;
+}
+
+input:hover {
+    box-shadow: 0 0 0 0;
+    border: solid #66BCEF 1px;
+    outline: 0;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+
+
+.iconSeach {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconSeach img {
+    height: 1.5rem;
+    width: 1.5rem;
+
+}
