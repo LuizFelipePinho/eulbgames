@@ -1,3 +1,4 @@
+// import Card from "./Components/Card/Card";
 import Container from "./Components/Container/Container";
 import Header from "./Components/Header/Header"
 import Slider from "./Components/Slider/Slider";
@@ -11,6 +12,7 @@ const App = () => {
 
         <Container>
             <Slider></Slider>
+            {/* <Card></Card> */}
         </Container>
         
         </>

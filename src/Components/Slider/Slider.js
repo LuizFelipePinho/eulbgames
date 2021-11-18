@@ -1,11 +1,12 @@
 import './Slider.css';
+import capaCs from './capa-csgo.jpg'
 
 const Slider = () => {
     return (
         <>
         <section className="slider">
-            
-        aaaaa
+            <img src={capaCs} alt=""/>    
+        
         </section>
         </>
     )

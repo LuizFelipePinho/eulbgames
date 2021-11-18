@@ -1,0 +1,18 @@
+.card {
+   border: solid red 2px;
+   width: 18rem;
+   height: 18rem;
+}
+
+.boxImg {
+   width: 100%;
+   height: 75%;
+
+
+}
+
+.boxImg img {
+   width: 100%;
+   height: 100%;
+
+}
