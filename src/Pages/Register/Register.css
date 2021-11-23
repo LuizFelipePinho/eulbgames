@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1a1b1f;
+}
+
+.containerForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 24rem;
+  border: solid #66bcef 2px;
+  padding: 1.5rem;
+}
+
+.boxFormCreate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inputCreateNome,
+.inputCreateEmail,
+.inputCreateSenha {
+  border: solid rgba(0, 0, 0, 0.144) 2px;
+  height: 2.3rem;
+  margin-bottom: 1.4rem;
+  background-color: #24272e0c;
+  color: #fff;
+}
+
+.inputCreateNome:focus,
+.inputCreateEmail:focus,
+.inputCreateSenha:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  border: solid #66bcef 2px;
+}
+
+.inputCreateNome:hover,
+.inputCreateEmail:hover,
+.inputCreateSenha:hover {
+  border: solid #66bcef 2px;
+}
+
+.nameCreate,
+.emailCreate,
+.senhaCreate {
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+  color: #fff;
+}
+
+.btnCriarConta {
+  padding: 0.6rem 1rem 0.6rem 1rem;
+  height: 2.7rem;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  border-radius: 4%;
+  margin-top: 2rem;
+  cursor: pointer;
+  background-color: #24272e0c;
+  color: #fff;
+  border: solid rgba(255, 255, 255, 0.514) 1px;
+}
+
+.btnCriarConta:hover {
+  border: solid #66bcef 2px;
+  color: #66bcef;
+}
+
+.titleCreate {
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+}
