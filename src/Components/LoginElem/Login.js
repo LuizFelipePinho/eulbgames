@@ -34,7 +34,7 @@ const LoginElem = () => {
                     <p className="signUpMsg">Cadastre-se no Steam e descubra milhares de jogos para jogar. </p>
                     <img className="imgSignUp" src={BoxSignUp} alt=""></img>
                     
-                    <Link to="/"><button className="btnCadastrar"> Cadastrar-se</button> </Link>
+                    <Link to="/register"><button className="btnCadastrar"> Cadastrar-se</button> </Link>
                 </div>    
             </div>
 
