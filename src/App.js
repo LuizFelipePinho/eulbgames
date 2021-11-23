@@ -1,32 +1,18 @@
-import Card from "./Components/Card/Card";
-import Container from "./Components/Container/Container";
-import Footer from "./Components/Footer/Footer";
-import Header from "./Components/Header/Header"
-import Slider from "./Components/Slider/Slider";
-import Structure from "./Components/StructureCard/StructureCard";
+
 import './reset.css'
+import { Routes, Route } from "react-router-dom";
+import Home from './Pages/Home/Home';
+import Login from './Pages/Login/Login';
 
 
 const App = () => {
     return (
         <>
-        <Header></Header>
+            <Routes>
+                <Route path="/" element={<Home />}></Route>
+                <Route path="/Login" element={<Login />}></Route>
 
-        <Container>
-            <Slider></Slider>
-
-            <Structure> 
-                <Card></Card>
-                <Card></Card>
-                <Card></Card>
-                <Card></Card>
-                <Card></Card>
-                <Card></Card>
-
-            </Structure>
-        </Container>
-        
-        <Footer></Footer>        
+            </Routes>    
         </>
     )
 };

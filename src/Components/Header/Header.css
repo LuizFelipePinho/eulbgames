@@ -8,7 +8,8 @@
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 2rem;
     background-color: #171A21;
     color: #fff;
     height: 7rem;
@@ -24,3 +25,14 @@
     color: #66BCEF;
 
 }
+
+.login, .home {
+    color: #fff;
+    text-decoration: none;
+    margin: 0.5rem;
+}
+
+.login:hover, .home:hover {
+    color: #66BCEF
+}
+

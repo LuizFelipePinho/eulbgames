@@ -9,7 +9,7 @@
     width: 12rem;
 }
 
-.navbar input {
+.inputSearch {
     background-color: #316282;
     height: 2rem;
     color: #fff;
@@ -21,19 +21,19 @@
 
 }
 
-input:focus {
+.inputSearch:focus {
     box-shadow: 0 0 0 0;
     border: solid #66BCEF 1px;
     outline: 0;
 }
 
-input:hover {
+.inputSearch:hover {
     box-shadow: 0 0 0 0;
     border: solid #66BCEF 1px;
     outline: 0;
 }
 
-input::placeholder {
+.inputSearch::placeholder {
     color: #fff;
 }
 
@@ -51,9 +51,7 @@ input::placeholder {
 
 }
 
-
-
-.iconSeach img {
+.iconSearchImg {
     height: 1.5rem;
     width: 1.5rem;
 

@@ -7,7 +7,7 @@ const Search = () => {
             <nav className="navbar">
                 <input className="inputSearch" placeholder="Buscar"></input>
                 <div className="iconSeach"> 
-                    <img src={iconSearch} alt=''></img>
+                    <img className="iconSearchImg" src={iconSearch} alt=''></img>
                 </div>
             </nav>
         </>

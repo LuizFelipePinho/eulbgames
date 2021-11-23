@@ -1,0 +1,107 @@
+.containerLogin {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.loginInputName, .loginInputPassword {
+    border: solid black 1px;
+}
+
+.screenLogin {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    padding: 4rem;
+
+
+}
+
+
+.boxForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 80%;
+
+}   
+
+.Titlelogin{
+    color: #000;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.loginName, .loginPassword {
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+}
+
+.loginInputName, .loginInputPassword {
+    height: 2rem;
+    margin-bottom: 1.4rem;
+    border-radius: 4%;
+
+}
+
+
+.loginInputName:focus, .loginInputPassword:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+
+.btnLogin {
+    height: 2.7rem;
+    width: 70%;
+    background-color: #66BCEF;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    border-radius: 4%;
+
+}
+
+
+.screenSignUp {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    padding: 4rem;
+    background-color: #212429;
+
+
+}
+
+
+
+.imgSignUp {
+    height: 17rem;
+    width: 20rem;
+
+}
+
+.btnCadastrar {
+    padding: 0.7rem 1.2rem 0.7rem 1.2rem;
+    cursor: pointer;
+    background-color: #212429;
+    color: #fff;
+    border: solid rgba(255, 255, 255, 0.514) 1px;
+}
+
+.btnCadastrar:hover {
+    border: solid #fff 1px;
+}
+
+.signUpMsg {
+    color: #fff;
+}
+
+.infosSignUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
