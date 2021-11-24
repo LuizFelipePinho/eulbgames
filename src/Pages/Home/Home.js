@@ -6,6 +6,7 @@ import Slider from "../../Components/Slider/Slider";
 import Structure from "../../Components/StructureCard/StructureCard";
 import Search from "../../Components/Search/Search";
 
+
 const list = [ 
     {
         name: "GTA V",
@@ -33,8 +34,7 @@ const Home = () => {
 
             <Structure> 
 
-                { list.map((game) => <Card name={game.name} img={game.img} preco={game.preco} />)}
-
+                { list.map((game) =><Card key={game.name} name={game.name} img={game.img} preco={game.preco} />)}
             </Structure>
         </Container>
         
