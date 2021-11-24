@@ -4,56 +4,71 @@
   box-sizing: border-box;
 }
 
-.container {
+
+
+.containerFormCreate {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #1a1b1f;
-}
+  background-color: #1a1b1fee;
+  background-image: url("backimg6.jpg");
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
 
-.containerForm {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 24rem;
-  border: solid #66bcef 2px;
-  padding: 1.5rem;
+
 }
 
 .boxFormCreate {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 25rem;
+  /* border: solid #66bcef 2px; */
+  padding: 3rem;
+  background-color: #14151aee;
+  border: solid #774192 2px;
+  border-radius: 2rem;
+
+
+  
+}
+
+.FormCreate {
+  display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.inputCreateNome,
-.inputCreateEmail,
-.inputCreateSenha {
-  border: solid rgba(0, 0, 0, 0.144) 2px;
+.inpNameCrete,
+.inpCreateEmail,
+.inpCreatePass {
   height: 2.3rem;
   margin-bottom: 1.4rem;
   background-color: #24272e0c;
   color: #fff;
+  border: solid #774192 2px;
+  
+
 }
 
-.inputCreateNome:focus,
-.inputCreateEmail:focus,
-.inputCreateSenha:focus {
+.inpNameCrete:focus,
+.inpCreateEmail:focus,
+.inpCreatePass:focus {
   box-shadow: 0 0 0 0;
   outline: 0;
-  border: solid #66bcef 2px;
+  border: solid #774192 2px;
 }
 
-.inputCreateNome:hover,
-.inputCreateEmail:hover,
-.inputCreateSenha:hover {
-  border: solid #66bcef 2px;
+.inpNameCrete:hover,
+.inpCreateEmail:hover,
+.inpCreatePass:hover {
+  border: solid #66bcef  2px;
 }
 
 .nameCreate,
 .emailCreate,
-.senhaCreate {
+.passCreate {
   font-size: 1.2rem;
   padding-bottom: 0.5rem;
   color: #fff;
@@ -71,11 +86,13 @@
   cursor: pointer;
   background-color: #24272e0c;
   color: #fff;
-  border: solid rgba(255, 255, 255, 0.514) 1px;
+  border: solid #774192 2px;
+
 }
 
 .btnCriarConta:hover {
   border: solid #66bcef 2px;
+
   color: #66bcef;
 }
 
