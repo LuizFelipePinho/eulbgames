@@ -1,18 +1,18 @@
 import React from 'react'
 import './card.css'
-import spotlight from './spotlight.jpg'
+// import spotlight from './spotlight.jpg'
 import like from './like.png'
 
-const Card = () => {
+const Card = ( {name, img, preco} ) => {
     return (
         <div className="card">
             <div className="boxImg">
-                <img src={spotlight} alt="#"></img>
+                <img  src={img} alt="#"></img>
             </div>
             <div className="boxInfo">
                 <div className="infos">
-                    <p className="nameGame">Satisfactory</p>
-                    <p className="priceGame">R$ 41,99</p>
+                    <p className="nameGame">{name}</p>
+                    <p className="priceGame">R$ {preco}</p>
                 </div>
 
                 <div className="favorite">
