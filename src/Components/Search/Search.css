@@ -5,8 +5,7 @@
     height: 2rem;
     background-color: #66BCEF;
     border-radius: 5%;
-
-    width: 12rem;
+    width: 20rem;
 }
 
 .inputSearch {
@@ -16,7 +15,17 @@
     text-align: left;
     padding: 0.3rem;
     border-radius: 4% 0 0 4%;
-    width: 10rem;
+    width: 20rem;
+    font-size: 1rem;
+}
+
+.iconSeach {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    cursor: pointer;
 
 
 }
@@ -39,17 +48,7 @@
 
 
 
-.iconSeach {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5%;
-    cursor: pointer;
 
-
-}
 
 .iconSearchImg {
     height: 1.5rem;

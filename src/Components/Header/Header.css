@@ -36,3 +36,7 @@
     color: #66BCEF
 }
 
+.home, .login {
+    font-size: 1.2rem;
+}
+
