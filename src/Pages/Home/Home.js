@@ -5,23 +5,31 @@ import Header from "../../Components/Header/Header"
 import Slider from "../../Components/Slider/Slider";
 import Structure from "../../Components/StructureCard/StructureCard";
 import Search from "../../Components/Search/Search";
-
-
-const list = [ 
-    {
-        name: "GTA V",
-        img:  "https://upload.wikimedia.org/wikipedia/pt/8/80/Grand_Theft_Auto_V_capa.png",
-        preco: "199,99"
-    }, 
-    {
-        name: "Days Gone",
-        img:  "https://playhype.pt/wp-content/uploads/2020/03/Days-Gone-Capa.png",
-        preco: "199,99"
-    }
-]
+import axios from 'axios';
+import { useState, useEffect } from "react";
 
 
 const Home = () => {
+
+    const [ gamesDados, setGamesDados ] = useState([]);
+
+    const [ callHim, setCallHim] = useState(false);
+
+    const  getAxios = async () => {
+        await axios.get('https://nintendo-shop.herokuapp.com/game/findMany')
+        .then( res => {
+            setGamesDados(res.data)
+        })
+    }
+
+    useEffect(() => {
+        setCallHim(true)
+        getAxios()
+    }, [])
+
+    console.log(gamesDados);
+
+
     return (
         <>
         <Header>
@@ -34,7 +42,7 @@ const Home = () => {
 
             <Structure> 
 
-                { list.map((game) =><Card key={game.name} name={game.name} img={game.img} preco={game.preco} />)}
+                { gamesDados.map((game) =><Card key={game.id} name={game.name} img={game.image} preco={game.price} />)}
             </Structure>
         </Container>
         
