@@ -1,5 +1,6 @@
 import "./Register.css";
-import { useState } from "react";
+import axios from 'axios';
+import { useState, useEffect } from "react";
 
 const FormRegister = () => {
   const [name, setName] = useState("");
@@ -7,7 +8,14 @@ const FormRegister = () => {
   const [nickName, setNickName] = useState("");
   const [password, setPassword] = useState("");
   const [passwordConfir, setPasswordConfir] = useState("");
+  const [ userCreated, setUserCreated] = useState("");
+  const [ userNotCreated, setUserNotCreated] = useState(false);
 
+  const clearForm = (event) => {
+    for(let i = 0; i < 5; i++) {
+      event.target[i].value = ''
+    }
+  }
 
   const pegaDados = (event) => {
     event.preventDefault();
@@ -18,9 +26,29 @@ const FormRegister = () => {
         password: password,
         passwordConfirmation: passwordConfir
     }
-    console.log(formData);
+    postAxios(formData)
+    clearForm(event)
 
-};
+  };
+
+
+  const postAxios = async (data) => {
+    await axios.post('https://nintendo-shop.herokuapp.com/user/register', data)
+    .then((res) => setUserCreated(res.data))
+    .catch((err) => setUserNotCreated(err))
+  }
+
+ 
+
+
+  useEffect(() => {
+    if(userCreated) {
+      alert('Usuário ' + userCreated.name + ' criado com sucesso!')
+    } else if (userNotCreated) {
+      alert('Falha em criar o usuário!')
+    }
+  }, [userCreated, userNotCreated])
+
 
 
   return (

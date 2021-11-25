@@ -6,17 +6,15 @@ const CardFilledApi = () => {
     
     const [ gamesDados, setGamesDados ] = useState([]);
 
-    const [ callHim, setCallHim] = useState(false);
 
-    const  getAxios = async () => {
+    const getAxios = async () => {
         await axios.get('https://nintendo-shop.herokuapp.com/game/findMany')
         .then( res => {
             setGamesDados(res.data)
-        })
+        }).catch( (err) => console.log(err))
     }
-
+    
     useEffect(() => {
-        setCallHim(true)
         getAxios()
     }, [])
 
