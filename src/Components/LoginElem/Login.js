@@ -1,24 +1,43 @@
 import './Login.css'
 import BoxSignUp from './boxsignup.png'
-import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import { useState} from 'react'
+import axios from 'axios';
+
 
 const LoginElem = () => {
     
     const [name, setName ] = useState('')
     const [password, setPassword ] = useState('')
-
+    const navigate = useNavigate()
 
     const pegaDados = (event) => {
         event.preventDefault()
-        console.log('nome: ' + name + ' senha: ' + password );
+        const dataUser = {
+            email: name,
+            password: password
+        }
+
+        LogaUser(dataUser)
+        navigate('/')
 
     }
 
+    
     const capturaDado = (event) => {
       
         event.target.name === 'name' ? setName(event.target.value) : setPassword(event.target.value)  
 
+    }
+
+    const LogaUser = (data) => {
+        axios.post('https://nintendo-shop.herokuapp.com/auth/login', data)
+        .then((res) => {
+            alert('Usuário ' + res.data.user.name + ' logado com sucesso!')
+            const token = res.data.token;
+            localStorage.setItem('token', token)
+        })
+        .catch( (err) => alert('Erro ao logar'))
     }
 
     return (
@@ -28,7 +47,7 @@ const LoginElem = () => {
                 <form className="boxForm" onSubmit={pegaDados}>
                     <h4 className="Titlelogin">Login</h4>
                     <label className="loginName" for="name">
-                        Nome:
+                        Email:
                     </label>
                     <input className="loginInputName" type="text" name="name" onChange={capturaDado}/>
 
