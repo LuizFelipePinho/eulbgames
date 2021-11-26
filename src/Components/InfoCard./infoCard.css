@@ -1,0 +1,23 @@
+.boxInfoGame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ImgInfoCard {
+    width: 20rem;
+    height: 15rem;
+}
+
+
+
+.nameInfoCard {
+    text-align: center;
+    padding: 2rem;
+}
+
+.storyInfoCard {
+    text-align: justify;
+    padding: 2rem;
+
+}

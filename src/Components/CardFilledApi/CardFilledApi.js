@@ -18,10 +18,9 @@ const CardFilledApi = () => {
         getAxios()
     }, [])
 
-    
     return(
         <>
-        { gamesDados.map((game) => <Card key={game.id} name={game.name} img={game.image} preco={game.price} />)}
+        { gamesDados.map((game) => <Card key={game.id} id={game.id} name={game.name} img={game.image} preco={game.price}  />)}
         </>
 
     )
